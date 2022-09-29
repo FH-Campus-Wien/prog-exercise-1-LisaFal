@@ -6,23 +6,83 @@ public class App {
 
     //todo Task 1
     public void sayHelloWorld(){
+        System.out.println("Hello World!");
         // input your solution here
     }
 
     //todo Task 2
     public void helloRobot(){
+        System.out.println("0123456789012345678901");
+        System.out.println("         __           ");
+        System.out.println(" _(\\    |@@|          ");
+        System.out.println("(__/\\__ \\--/ __     ");
+        System.out.println("   \\___|----|  |   __");
+        System.out.println("       \\ }{ /\\ )_ / _\\ ");
+        System.out.println("       /\\__/\\ \\__O (__");
+        System.out.println("      (--/\\--)    \\__/ ");
+        System.out.println("      _)(  )(_ ");
+        System.out.println("     `---''---` ");
+
         // input your solution here
     }
 
     //todo Task 3
     public void sumOfLiterals(){
         // input your solution here
+        char grade = 'Z';
+        int grade2 = grade;
+
+        int number = 0xface;
+        int numb = 012;
+
+        long size = 80L;
+        int size2 = (int)size; //cast
+
+        float n = 44e-1f;
+        int n0 = (int)n;
+
+        double n1 = 8.88e1;
+        int n11 = (int)n1;
+
+        double n2 = 5.5f;
+        int n22 = (int)n2;
+
+        double n3 = 99.9;
+        int n33 = (int)n3;
+
+        int sum = grade2 + number + numb + size2 + n0 + n11 + n22 + n33;
+
+        System.out.println(sum);
+
+
+
+
+
+
     }
 
     //todo Task 4
     public void addTwoNumbers(){
         // input your solution here
+       int number1;
+       int number2;
+        System.out.println();
+       Scanner scan1 = new Scanner(System.in);
+       number1 = scan1.nextInt();
+
+
+        System.out.println();
+        Scanner scan2 = new Scanner(System.in);
+        number2 = scan2.nextInt();
+
+        System.out.println(number1 + number2);
+
+
+
+
+
     }
+
 
     //todo Task 5
     public void swapTwoNumbers(){
