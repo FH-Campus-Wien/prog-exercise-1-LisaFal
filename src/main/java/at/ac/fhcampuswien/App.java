@@ -13,16 +13,16 @@ public class App {
 
     //todo Task 2
     public void helloRobot(){
-        System.out.println("0123456789012345678901");
-        System.out.println("         __           ");
-        System.out.println(" _(\\    |@@|          ");
-        System.out.println("(__/\\__ \\--/ __     ");
-        System.out.println("   \\___|----|  |   __");
-        System.out.println("       \\ }{ /\\ )_ / _\\ ");
-        System.out.println("       /\\__/\\ \\__O (__");
-        System.out.println("      (--/\\--)    \\__/ ");
-        System.out.println("      _)(  )(_ ");
-        System.out.println("     `---''---` ");
+        System.out.println("0123456789012345678901" + System.lineSeparator() +
+                        "         __" + System.lineSeparator() +
+                        " _(\\    |@@|" + System.lineSeparator() +
+                        "(__/\\__ \\--/ __" + System.lineSeparator() +
+                        "   \\___|----|  |   __" + System.lineSeparator() +
+                        "       \\ }{ /\\ )_ / _\\" + System.lineSeparator() +
+                        "       /\\__/\\ \\__O (__" + System.lineSeparator() +
+                        "      (--/\\--)    \\__/" + System.lineSeparator() +
+                        "      _)(  )(_" + System.lineSeparator() +
+                        "     `---''---`" + System.lineSeparator());
 
         // input your solution here
     }
@@ -67,14 +67,11 @@ public class App {
         // input your solution here
        int number1;
        int number2;
-        System.out.println();
        Scanner scan1 = new Scanner(System.in);
        number1 = scan1.nextInt();
+       number2 = scan1.nextInt();
 
-        System.out.println();
-        number2 = scan1.nextInt();
-
-        System.out.println(number1 + number2);
+       System.out.println(number1 + number2);
 
 
 
@@ -86,9 +83,9 @@ public class App {
         // input your solution here
         int x = 9;
         int y = 4;
+        Scanner scan1 = new Scanner(System.in);
 
         System.out.print("Before Swap: " + System.lineSeparator() + "x: ");
-        Scanner scan1 = new Scanner(System.in);
         x = scan1.nextInt();
         System.out.print("y: ");
         y = scan1.nextInt();
@@ -98,7 +95,7 @@ public class App {
         x = y + x; //x=4
         y = -y; //y=9
 
-        System.out.println("After Swap:" + System.lineSeparator() + "x: " + x
+        System.out.print("After Swap:" + System.lineSeparator() + "x: " + x
                  + System.lineSeparator() + "y: " + y);
 
 
@@ -120,7 +117,7 @@ public class App {
         n2 = scan.nextInt();
 
         if (n1 < n2) {
-            System.out.println("n1 < n2"); }
+            System.out.println("n2 > n1"); }
 
         if (n1 > n2) {
             System.out.println("n1 > n2"); }
