@@ -22,7 +22,7 @@ public class App {
                         "       /\\__/\\ \\__O (__" + System.lineSeparator() +
                         "      (--/\\--)    \\__/" + System.lineSeparator() +
                         "      _)(  )(_" + System.lineSeparator() +
-                        "     `---''---`" + System.lineSeparator());
+                        "     `---''---`");
 
         // input your solution here
     }
@@ -162,6 +162,28 @@ public class App {
     public void getCommissionRate(){
         // input your solution here
 
+        int commclass;
+        double rate;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter CommissionClass: ");
+        commclass = scanner.nextInt();
+
+        switch(commclass) {
+            case 1: rate = 0.1;
+            break;
+
+            case 2: rate = 0.2;
+            break;
+
+            case 3: rate = 0.3;
+            break;
+
+            case 4: rate = 0.4;
+            break;
+
+            default: rate = 0.0;
+        }
+        System.out.print("Your Commission Rate was set to " + rate);
 
 
 
@@ -170,11 +192,58 @@ public class App {
     //todo Task 9
     public void leapyear(){
         // input your solution here
+        int year;
+        System.out.print("Year: ");
+        Scanner scanner = new Scanner(System.in);
+        year = scanner.nextInt();
+
+        if (year % 4 == 0 || year % 400 == 0 || year % 100 != 0 && year % 400 == 0) {
+            System.out.println("Leapyear");
+        }
+
+        else {
+            System.out.println("Not a leapyear");
+        }
+
+
+
+
     }
 
     //todo Task 10
     public void transposedNumbers(){
         // input your solution here
+
+        int numb;
+        int numb2;
+        int numb3;
+        int numb4;
+        int numb5;
+
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Number: ");
+        numb = scan.nextInt();
+
+        numb2 = numb / 100;
+        numb3 = numb % 100;
+        numb4 = numb3 / 10;
+        numb5 = numb3 % 10;
+
+        int numb6 = numb5*100;
+        int numb7 = numb4*10;
+        int numb8 = numb2;
+
+        int sum = numb6 + numb7 + numb8;
+
+        System.out.println(sum);
+
+
+
+
+
+
+
     }
 
 
