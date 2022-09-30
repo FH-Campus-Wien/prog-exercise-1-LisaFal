@@ -85,7 +85,7 @@ public class App {
         int y = 4;
         Scanner scan1 = new Scanner(System.in);
 
-        System.out.print("Before Swap:" + System.lineSeparator() + "x: ");
+        System.out.print("Before Swap: " + System.lineSeparator() + "x: ");
         x = scan1.nextInt();
         System.out.print("y: ");
         y = scan1.nextInt();
@@ -95,7 +95,7 @@ public class App {
         x = y + x; //x=4
         y = -y; //y=9
 
-        System.out.print("After Swap:" + System.lineSeparator() + "x: " + x
+        System.out.print("After Swap: " + System.lineSeparator() + "x: " + x
                  + System.lineSeparator() + "y: " + y);
 
 
@@ -170,16 +170,16 @@ public class App {
 
         switch(commclass) {
             case 1: rate = 0.01;
-            break;
+
 
             case 2: rate = 0.02;
-            break;
+
 
             case 3: rate = 0.03;
-            break;
+
 
             case 4: rate = 0.04;
-            break;
+
 
             default: rate = 0.00;
         }
@@ -202,7 +202,7 @@ public class App {
         }
 
         else {
-            System.out.println("Not a leapyear");
+            System.out.println("Not a Leapyear");
         }
 
 
