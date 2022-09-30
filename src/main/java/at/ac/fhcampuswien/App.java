@@ -85,7 +85,7 @@ public class App {
         int y = 4;
         Scanner scan1 = new Scanner(System.in);
 
-        System.out.print("Before Swap: " + System.lineSeparator() + "x: ");
+        System.out.print("Before Swap:" + System.lineSeparator() + "x: ");
         x = scan1.nextInt();
         System.out.print("y: ");
         y = scan1.nextInt();
@@ -169,19 +169,19 @@ public class App {
         commclass = scanner.nextInt();
 
         switch(commclass) {
-            case 1: rate = 0.1;
+            case 1: rate = 0.01;
             break;
 
-            case 2: rate = 0.2;
+            case 2: rate = 0.02;
             break;
 
-            case 3: rate = 0.3;
+            case 3: rate = 0.03;
             break;
 
-            case 4: rate = 0.4;
+            case 4: rate = 0.04;
             break;
 
-            default: rate = 0.0;
+            default: rate = 0.00;
         }
         System.out.print("Your Commission Rate was set to " + rate);
 
@@ -197,7 +197,7 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         year = scanner.nextInt();
 
-        if (year % 4 == 0 || year % 400 == 0 || year % 100 != 0 && year % 400 == 0) {
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println("Leapyear");
         }
 
