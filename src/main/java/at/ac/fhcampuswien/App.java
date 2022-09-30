@@ -1,5 +1,6 @@
 package at.ac.fhcampuswien;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class App {
@@ -70,14 +71,10 @@ public class App {
        Scanner scan1 = new Scanner(System.in);
        number1 = scan1.nextInt();
 
-
         System.out.println();
-        Scanner scan2 = new Scanner(System.in);
-        number2 = scan2.nextInt();
+        number2 = scan1.nextInt();
 
         System.out.println(number1 + number2);
-
-
 
 
 
@@ -87,21 +84,90 @@ public class App {
     //todo Task 5
     public void swapTwoNumbers(){
         // input your solution here
+        int x = 9;
+        int y = 4;
+
+        System.out.print("Before Swap: " + System.lineSeparator() + "x: ");
+        Scanner scan1 = new Scanner(System.in);
+        x = scan1.nextInt();
+        System.out.print("y: ");
+        y = scan1.nextInt();
+
+        x = x + y; //x=13
+        y = y - x; //y=-9
+        x = y + x; //x=4
+        y = -y; //y=9
+
+        System.out.println("After Swap:" + System.lineSeparator() + "x: " + x
+                 + System.lineSeparator() + "y: " + y);
+
+
+
     }
 
     //todo Task 6
     public void compareTwoNumbers(){
         // input your solution here
-    }
+
+        int n1;
+        int n2;
+
+        System.out.print("n1: ");
+        Scanner scan = new Scanner(System.in);
+        n1 = scan.nextInt();
+
+        System.out.print("n2: ");
+        n2 = scan.nextInt();
+
+        if (n1 < n2) {
+            System.out.println("n1 < n2"); }
+
+        if (n1 > n2) {
+            System.out.println("n1 > n2"); }
+
+        if (n1 == n2) {
+            System.out.println("n1 == n2"); }
+
+
+        }
+
+
 
     //todo Task 7
     public void ratingSalesPerson(){
         // input your solution here
+        int revenue;
+
+        System.out.print("Enter annual Revenue: ");
+        Scanner scanr = new Scanner(System.in);
+        revenue = scanr.nextInt();
+
+        if (revenue < 0 || revenue >= 100000) {
+            System.out.println("Invalid Revenue");
+        }
+        if (revenue >= 0 && revenue < 20000) {
+            System.out.println("Poor Sales Revenue");
+        }
+        if (revenue >= 20000 && revenue < 50000) {
+            System.out.println("Average Sales Revenue");
+        }
+        if (revenue >= 50000 && revenue < 80000){
+            System.out.println("Good Sales Revenue");
+        }
+        if (revenue >= 80000 && revenue < 100000){
+            System.out.println("Excellent Sales Revenue");
+        }
+
+
     }
 
     //todo Task 8
     public void getCommissionRate(){
         // input your solution here
+
+
+
+
     }
 
     //todo Task 9
